@@ -6,8 +6,8 @@ export default function Logo() {
     <Link href="/">
       <Image
         className="rounded-sm"
-        width="165"
-        height="80"
+        width="160"
+        height="70"
         src="/logo/logo.png"
         alt="logo"
       />
