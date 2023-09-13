@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import { NotoSerifSC } from "@/lib/fonts";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function LandingHero() {
   return (
@@ -23,7 +24,7 @@ export default function LandingHero() {
           <div
             className={cn(
               "text-5xl text-left font-black transition-colors duration-300",
-              "hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-primary hover:to-blue-400"
+              "md:hover:bg-clip-text md:hover:text-transparent md:hover:bg-gradient-to-r md:hover:from-primary md:hover:to-blue-400"
             )}
           >
             <div>助力</div>
@@ -32,8 +33,9 @@ export default function LandingHero() {
           <div className="text-sm text-left font-semibold">
             popidea是一个专注于games和development相关的资源收集平台,如果你想了解游戏或者开发相关的东西，你都可以在本平台中进行探索.
           </div>
+
           <Button className="font-extrabold" size="lg">
-            欢迎注册
+            <Link href="/routes/sign-up">欢迎注册</Link>
           </Button>
         </div>
         <div
@@ -43,7 +45,7 @@ export default function LandingHero() {
           )}
         >
           <Image
-            src="/hero/hero-1.png"
+            src="/landing/hero-1.png"
             alt="hero-image"
             width="300"
             height="100"
